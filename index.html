@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPLITTER</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/favicon-32x32.png" type="image/x-icon">
+</head>
+<body>
+    <header class="head">
+        <img src="images/logo.svg" alt="">
+    </header>
+    <div class="main-section">
+    <section class="section section-a">
+        <div class="enterBill">
+            <p class="mainP">Bill</p>
+            <div class="input-container">
+                <input type="text" id="inputBill" class='mainP2'>
+                <img src="images/icon-dollar.svg" class='dollar' alt="">
+            </div>  
+        </div>
+        <div class="selectTip">
+            <p class="mainP">Select Tip %</p>
+            <div class="tips">
+                <div class="tip">
+                    <button class="btn tip-btn" data-id="0.05">5%</button>
+                </div>
+                <div class="tip">
+                    <button class="btn tip-btn" data-id="0.1">10%</button>
+                </div>
+                <div class="tip">
+                    <button class="btn tip-btn" data-id="0.15">15%</button>
+                </div>
+                <div class="tip">
+                    <button class="btn tip-btn" data-id="0.25">25%</button>
+                </div>
+                <div class="tip">
+                    <button class="btn tip-btn" data-id="0.50">50%</button>
+                </div>
+                <div class="custom-tip">
+                <input type="text" class="btn" placeholder="Custom" id='customBtn'>
+                </div>
+            </div>
+        </div>
+        <div class="guest-number">
+            <p class="mainP">Number of people</p>
+            <div class="input-container">
+                <input type="number" class="mainP2" name="num" id="num-geust">
+                <img src="images/icon-person.svg" class="person" alt="">
+            </div>
+        </div>
+    </section>
+    <div class="section section-b">
+        <div class="tip-amount">
+            <div class="amount-text">
+                <p class="subP2">Tip Amount<br><span>/person</span></p>
+            </div>
+            <div class="amount">
+                <p class="subP tip-person">$0.00</p>
+            </div>
+        </div>
+        <div class="tip-total">
+            <div class="amount-total">
+                <p class="subP2">Total<br><span>/person</span></p>
+            </div>
+            <div class="total">
+                <p class="subP tipTotal">$0.00</p>
+            </div>
+        </div>
+        <div class="reset">
+            <button class="btn" id="reset">RESET</button>
+        </div>
+    </div>
+</div>
+<script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Space Mono', monospace;
+}
+:root{
+    --Strongcyan: hsl(172, 67%, 45%);
+    --Verydarkcyan: hsl(183, 100%, 15%);
+    --Darkgrayishcyan: hsl(186, 14%, 43%);
+    --Darkgrayishcyan: hsl(184, 14%, 56%);
+    --Lightgrayishcyan: hsl(185, 41%, 84%);
+    --LightgrayishCyan: hsl(189, 41%, 97%);
+    --White: hsl(0, 0%, 100%)
+}
+body{
+    background-color: var(--Lightgrayishcyan);
+    padding-bottom: 1rem;
+}
+/*global styles*/
+.mainP{
+    font-size: 1.1rem;
+    text-transform: capitalize;
+    padding: 1rem 0;
+}
+.mainP2{
+    font-size: 1.5rem;
+}
+.section{
+    padding: 2rem;
+    background-color: white;
+}
+.btn{
+    border: none;
+    font-size: 1.5rem;
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 5px;
+    background-color: var(--Verydarkcyan);
+    color: white;
+    cursor: pointer;
+}
+.active{
+    background-color: var(--Strongcyan);
+}
+.custom-tip input{
+    text-align: center;
+    color: black;
+}
+.section-a input{
+    width: 100%;
+    padding:0.5rem ;
+    border: none;
+    background-color: var(--LightgrayishCyan);
+    border-radius: 5px;
+}
+input:focus{
+    outline: none;
+}
+/*HEADER*/
+.head{
+    text-align: center;
+    padding: 3rem 0;
+}
+/*sections*/
+.section-a{
+    border-radius: 20px 20px 0px 0px;
+}
+/*sections enter bill*/
+.input-container{
+    position: relative;
+}
+.input-container img{
+    position: absolute;
+    left: 2%;
+    top: 50%;
+    transform: translateY(-50%)
+}
+/*sections selet tip*/
+.tips{
+    display: grid;
+    grid-template-columns:repeat(2,1fr) ;
+    grid-gap:0.6rem 1rem;
+}
+/*section-b*/
+.section-b{
+    background-color: var(--Verydarkcyan);
+    border-radius: 5px;
+    padding: 2rem;
+}
+.tip-amount,.tip-total{
+    display: flex;
+    justify-content: space-between;
+}
+.subP{
+    font-size: 2rem;
+    color: var(--Strongcyan);
+}
+.subP2{
+    font-size: 20px;
+    color: white;
+}
+span{
+    font-size: 15px;
+    color: var(--Darkgrayishcyan);
+}
+.section-b .btn{
+    background-color: var(--Strongcyan);
+    margin-top: 3rem;
+    color: var(--Verydarkcyan);
+}
+/*media query*/
+@media screen and (min-width:768px){
+    .main-section{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        margin: 2rem 10rem;
+        grid-gap: 1.5rem;
+        background-color: white;
+        border-radius: 17px;
+        padding: 2rem;
+    }
+    .tips{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+    }
+    .tip-amount,.tip-total{
+        margin:0 0 4rem  0;
+    }
+    .section{
+        padding: 1rem;
+    }
+    .section-b .btn{
+        margin-top: 5rem;
+    }
+    .subP{
+        font-size: 2.5rem;
+    }
+
+}
